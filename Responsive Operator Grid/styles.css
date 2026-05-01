@@ -1,0 +1,91 @@
+/*RESET GERAL*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*REGRAS DO BODY*/
+body{
+    background-color: #111;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/*REGRAS CSS PARA O CLASS DO HEADER*/
+.cabecalho-pagina{
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00FFCC;
+    padding-bottom: 10px;
+}
+
+.cabecalho-pagina h1{
+    color: #00FFCC;
+    text-transform: uppercase;
+}
+
+/*GRID DE IMAGENS E IMAGENS*/
+.grid-galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imagem-fluida{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #333;
+}
+
+.card-operador{
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    transition: transform 0.3s ease;    
+}
+
+.card-operador:hover{
+    transform: scale(1.02);
+    border-color: #00FFCC;
+}
+
+.card-info{
+    padding: 25px;
+}
+
+.card-info h2{
+    font-size: 1.2rem;
+    color:#FFF;
+    margin-bottom: 10px;
+}
+
+.card-info p{
+     font-size: 0.9rem;
+    color:#AAA;
+}
+
+/*REGRAS DE RESPONSIVIDADE*/
+
+/*TABLET*/
+@media(min-width:768px){
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .cabecalho-pagina{
+        font-size: 2.5rem;
+    }
+}
+
+/*DESKTOP*/
+@media(min-width: 1024px){
+    .grid-galeria{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
