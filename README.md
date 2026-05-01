@@ -1,77 +1,105 @@
-📊 Banco de Dados Operadores (Responsive Grid)
+# 🚀 Responsive Operator Grid
 
-Projeto simples em HTML + CSS com foco em layout responsivo utilizando Media Queries e CSS Grid. A aplicação exibe cartões de operadores com imagens e descrições, adaptando automaticamente o layout conforme o tamanho da tela.
+Interface responsiva desenvolvida com **HTML5 e CSS3**, utilizando **CSS Grid** e **Media Queries** para adaptação em diferentes tamanhos de tela.
 
-🚀 Demonstração
+---
 
-O layout se adapta em três formatos:
+## 📖 Sobre o projeto
 
-📱 Mobile → 1 coluna
-📱 Tablet → 2 colunas
-💻 Desktop → 3 colunas
-🧠 Objetivo do Projeto
+O **Responsive Operator Grid** simula um pequeno banco de dados visual de operadores, exibindo informações em formato de cartões (cards) com layout moderno e adaptável.
 
-Este projeto foi desenvolvido com o objetivo de praticar:
+O projeto foi criado com foco no aprendizado e prática de conceitos essenciais de **desenvolvimento front-end**, principalmente responsividade.
 
-Estruturação semântica com HTML
-Estilização com CSS
-Uso de CSS Grid
-Aplicação de Media Queries
-Criação de layouts responsivos
-🛠️ Tecnologias Utilizadas
-HTML5
-CSS3
-📂 Estrutura do Projeto
-📁 projeto
+---
+
+## 🎯 Objetivos
+
+- Praticar estruturação com HTML semântico  
+- Aplicar CSS Grid na construção de layouts  
+- Implementar responsividade com Media Queries  
+- Criar uma interface simples, limpa e funcional  
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- HTML5  
+- CSS3  
+
+---
+
+## 📱 Responsividade
+
+O layout se adapta automaticamente conforme o tamanho da tela:
+
+| Dispositivo | Layout |
+|------------|--------|
+| Mobile     | 1 coluna |
+| Tablet     | 2 colunas |
+| Desktop    | 3 colunas |
+
+---
+
+## 💡 Funcionalidades
+
+- Grid responsivo com CSS Grid  
+- Cards com efeito hover  
+- Imagens fluidas  
+- Layout centralizado e adaptável  
+
+---
+
+## 📂 Estrutura do projeto
+
+```
+📁 responsive-operator-grid
 │-- index.html
 │-- styles.css
-💡 Funcionalidades
-Layout em grade responsiva
-Cards com efeito hover
-Imagens fluidas
-Design adaptável para diferentes dispositivos
-🎨 Responsividade
+```
 
-O projeto utiliza Media Queries para adaptar o layout:
+---
 
+## 🧩 Trecho de código (Responsividade)
+
+```css
 /* Tablet */
 @media(min-width:768px){
-    grid-template-columns: repeat(2, 1fr);
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Desktop */
 @media(min-width: 1024px){
-    grid-template-columns: repeat(3, 1fr);
+    .grid-galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
-🖼️ Estrutura dos Cards
+```
 
-Cada operador é representado por um card contendo:
+---
 
-Imagem (gerada via Picsum)
-Codinome
-Descrição da especialidade
+## 🎨 Layout
 
-Exemplo:
+O projeto utiliza um tema escuro com destaque em verde neon, criando uma identidade visual moderna e tecnológica.
 
-<article class="card-operador">
-    <img class="imagem-fluida">
-    <div class="card-info">
-        <h2>Condinome</h2>
-        <p>Descrição</p>
-    </div>
-</article>
-🎯 Aprendizados
+---
 
-Durante o desenvolvimento, foram reforçados conceitos como:
+## 📌 Possíveis melhorias
 
-Mobile First
-Organização de layout com Grid
-Boas práticas de CSS (reset, responsividade, reutilização de classes)
-📌 Possíveis Melhorias
-Adicionar mais operadores dinamicamente
-Implementar animações mais avançadas
-Integrar com JavaScript
-Tornar os dados dinâmicos (API ou banco de dados)
-👨‍💻 Autor
+- Integração com JavaScript  
+- Consumo de API para dados dinâmicos  
+- Animações mais avançadas  
+- Filtro e busca de operadores  
 
-Paulo Henrique Peres Pelisser
+---
+
+## 👨‍💻 Autor
+
+**Paulo Henrique Peres Pelisser**
+
+---
+
+## 📬 Contato
+
+Se quiser trocar ideias ou colaborar em projetos, fique à vontade para se conectar comigo no LinkedIn.
